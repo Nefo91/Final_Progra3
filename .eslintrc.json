@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "google",
+        "plugin:compat/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "impliedStrict": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "max-len": ["error", {
+            "comments": 120,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true
+        }],
+        "require-jsdoc" : ["off"]
+    }
+}
